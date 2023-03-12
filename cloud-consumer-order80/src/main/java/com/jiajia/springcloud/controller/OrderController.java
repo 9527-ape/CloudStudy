@@ -12,7 +12,10 @@ import javax.annotation.Resource;
 @RestController
 public class OrderController {
 
-     public static final String PaymentSrv_URL = "http://localhost:8001";
+     //public static final String PaymentSrv_URL = "http://localhost:8001";
+
+     //集群改为使用微服务名称(相当于key-value键值对)
+     public static final String PaymentSrv_URL = "http://CLOUD-PAYMENT-SERVICE";
 
      @Resource
      private RestTemplate restTemplate;
