@@ -15,6 +15,8 @@ import java.util.List;
 @RestController
 @Slf4j
 public class PaymentController {
+
+    //如果是Eureka则还需要在启动类加上@EnableDiscoveryClient
     @Resource
     private PaymentService paymentService;
 
